@@ -90,7 +90,32 @@ void linhaDe50Em50(PGM *pgm){
 	}
 
 }
+/*
+9. Crie um método para inverter a imagem verticalmente (flip).
 
+
+*/
+void inverteVerticalmente(PGM *pgm){
+	for(int i = 0 ; i < pgm->alt/2; i++){
+		for(int j = 0; j < pgm->larg; j++){
+			unsigned char temp = getPixel(pgm, j, i);
+			setPixel(pgm,j,i, getPixel(pgm, j, pgm->alt-i - 1));
+		}// i = 0 troca por altura -1 
+		//i = 1 troca por altura - 1 -1
+	}
+}
+void exercicio9(){
+	PGM img3;
+	unsigned char corP;
+	cout << "\n\n#Exercicio 9#\n";
+	ler(&img3, "feep.pgm");
+
+	inverteVerticalmente(&img3);
+
+	gravar(&img3, "exercicio9.pgm"); //gravar o resultado no disco
+	destruir(&img3);
+
+}
 void exercicio8(){
 	PGM img;
 	cout << "#Exercicio 8#\n";
@@ -189,7 +214,8 @@ int main(void)
 	// exercicio5();
 	// exercicio6();
 	//exercicio7();
-	exercicio8();
+	//exercicio8();
+	exercicio9();
 	cout << "Pressione uma tecla para encerrar o programa.\n";
 	getchar();
 	return EXIT_SUCCESS; 
