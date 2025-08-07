@@ -91,18 +91,52 @@ void linhaDe50Em50(PGM *pgm){
 
 }
 /*
+Exercício 9:
 9. Crie um método para inverter a imagem verticalmente (flip).
-
 
 */
 void inverteVerticalmente(PGM *pgm){
-	for(int i = 0 ; i < pgm->alt/2; i++){
-		for(int j = 0; j < pgm->larg; j++){
-			unsigned char temp = getPixel(pgm, j, i);
-			setPixel(pgm,j,i, getPixel(pgm, j, pgm->alt-i - 1));
-		}// i = 0 troca por altura -1 
-		//i = 1 troca por altura - 1 -1
+
+
+	for(int x = 0; x < pgm->larg; x++){
+		for(int y = 0; y < pgm->alt/2; y++){
+			unsigned char temp = getPixel(pgm, x, y);
+			setPixel(pgm, x, y, getPixel(pgm, x, pgm->alt - y - 1));
+			setPixel(pgm, x,  pgm->alt - y - 1, temp);
+		}
 	}
+
+}
+/*
+Exercício 10:
+10. Considere uma imagem PGM de entrada e uma região definida pelas coordenadas P1(x1,
+y1) e P2(x2,y2). Desenvolva uma função para criar uma imagem de saída, a qual possui a
+mesma dimensão da imagem de entrada e a cor de todos os pixels é preta. Em seguida,
+copie a região definida na imagem de entrada para a imagem de saída.
+*/
+PGM coiaTrecho(PGM *pgm, int x1, int y1, int x2, int y2){
+	PGM result;
+	criarComCorDeFundo(&result, pgm->larg, pgm->alt, 0);
+	for(int i = x1; i <= x2; i++){
+		for(int j = y1; j <= y2; j++){
+			unsigned char temp  = getPixel(pgm, i, j);
+			setPixel(&result, i, j,temp );
+		}
+	}
+	return result;
+}
+void exercicio10(){
+	PGM img;
+	cout << "#Exercicio 10#\n";
+	imprimir(&img);
+	criarComCorDeFundo(&img, 700, 500, 255);
+
+	PGM result = coiaTrecho(&img,150, 50, 550, 450 );
+	imprimir(&result);
+	gravar(&img, "exercicio10_input.pgm");
+	gravar(&result, "exercicio10_output.pgm");
+	destruir(&result);
+	imprimir(&result);
 }
 void exercicio9(){
 	PGM img3;
@@ -215,7 +249,8 @@ int main(void)
 	// exercicio6();
 	//exercicio7();
 	//exercicio8();
-	exercicio9();
+	//exercicio9();
+	exercicio10();
 	cout << "Pressione uma tecla para encerrar o programa.\n";
 	getchar();
 	return EXIT_SUCCESS; 
