@@ -1,6 +1,6 @@
 #include <iostream>
 #include "PGM.hpp"
-
+#include <cmath>
 using namespace std;
 
 /*
@@ -124,6 +124,111 @@ PGM coiaTrecho(PGM *pgm, int x1, int y1, int x2, int y2){
 		}
 	}
 	return result;
+}
+/*
+Exercício  11:
+11. Desenvolva uma função em C++ para desenhar uma borda em uma imagem PGM. A cor
+e a espessura da borda devem ser passadas por parâmetro da função. Observação: A
+espessura da borda não pode ultrapassar 10 pixels.
+*/
+void preencheBora(PGM *pgm, int espessura, unsigned char cor){
+	if(espessura> 10 ){
+		cout << "espessura maior que 10.";
+		return;
+	}
+
+	for(int x = 0; x < pgm->larg; x++){
+		for(int y = 0; y < pgm->alt; y++){
+			if(x == 0){
+				setPixel(pgm, x, y, cor);
+			}
+			if(x == pgm->larg - 1){
+				setPixel(pgm, x, y, cor);
+			}
+			if(y == 0){
+				setPixel(pgm, x, y, cor);
+			}
+			if(y == pgm->alt - 1){
+				setPixel(pgm, x, y, cor);
+			}
+		}
+	}
+}
+
+/*
+Exercício 12:
+12. Desenvolva uma função em C++ para desenhar um “X” imagem PGM. A cor da linha deve
+ser passada por parâmetro.
+
+diagonal secundaria: i + j  = n + 1
+*/
+void preencheComX(PGM *pgm, unsigned char cor){
+	if(pgm->larg ==pgm->alt ){
+		for(int x = 0; x < pgm->larg; x++){
+			for(int y = 0; y < pgm->alt; y++){
+				if(x == y){
+					setPixel(pgm, x, y, cor);
+				}
+				if(x + y == pgm->larg + 1){
+					setPixel(pgm, x, y, cor);
+				}
+			}
+		}
+	}else if(pgm->larg  > pgm->alt ){
+			float razao  = ceil(pgm->larg /  (float) pgm->alt);
+			cout << " a razao: " << razao;
+			int xAtual = 0;
+			for(int y = 0; y < pgm->alt; y++){
+				int x = xAtual;
+				while(x < xAtual + razao && xAtual < pgm->larg){
+					//cout << "no while o x: " << x << " ";
+					setPixel(pgm, x, y, cor);
+					setPixel(pgm, pgm->larg - x, y, cor);
+					x++;
+				}
+				xAtual = x;
+			}
+			
+	}else{
+		int razao = pgm->alt /   pgm->larg;
+		int yAtual = 0;
+		for(int x = 0; x < pgm->larg; x++){
+			int y = yAtual;
+			while( y < yAtual + razao && yAtual < pgm->alt && y <   pgm->alt){
+			//	cout << "no while o y: " << y << " ";
+
+				setPixel(pgm, x, y, cor);
+				setPixel(pgm, pgm->larg - x, y, cor);
+				y++;
+			}
+			yAtual = y;
+		}
+	}
+
+}
+
+void exercicio12(){
+	PGM img3;
+	unsigned char corP;
+	cout << "\n\n#Exercicio 12#\n";
+	criarComCorDeFundo(&img3, 700, 500, 255);
+
+	preencheComX(&img3,  0);
+
+	gravar(&img3, "exercicio12.pgm"); //gravar o resultado no disco
+	destruir(&img3);
+}
+
+void exercicio11(){
+	PGM img3;
+	unsigned char corP;
+	cout << "\n\n#Exercicio 11#\n";
+	criarComCorDeFundo(&img3, 700, 500, 255);
+
+	preencheBora(&img3, 10,  0);
+
+	gravar(&img3, "exercicio11.pgm"); //gravar o resultado no disco
+	destruir(&img3);
 }
 void exercicio10(){
 	PGM img;
@@ -250,7 +355,9 @@ int main(void)
 	//exercicio7();
 	//exercicio8();
 	//exercicio9();
-	exercicio10();
+	//exercicio10();
+	//exercicio11();
+	exercicio12();
 	cout << "Pressione uma tecla para encerrar o programa.\n";
 	getchar();
 	return EXIT_SUCCESS; 
