@@ -64,6 +64,11 @@
         "ranges": "cpp",
         "shared_mutex": "cpp",
         "stop_token": "cpp",
-        "numbers": "cpp"
+        "numbers": "cpp",
+        "charconv": "cpp",
+        "format": "cpp",
+        "span": "cpp",
+        "text_encoding": "cpp",
+        "variant": "cpp"
     }
 }
