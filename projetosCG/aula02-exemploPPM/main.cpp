@@ -3,7 +3,7 @@
 #include "PGM.hpp"
 
 #include <cmath>
-
+#include <ctime>
 using namespace std;
 
 /*
@@ -138,7 +138,7 @@ PGM converteParaPGM(PPM *ppm){
 	PGM retorno;
 	criar(&retorno, ppm->larg, ppm->alt);
 	for(int x = 0; x < retorno.larg; x++){
-		for(int y = 0; y > retorno.alt; y++){
+		for(int y = 0; y < retorno.alt; y++){
 			RGB cor = getPixel(ppm, x, y);
 			unsigned char corConvertida =   0.299*cor.r + 0.587*cor.g + 0.114*cor.b;
 			cout << " a cor convertida: "  << (int) corConvertida << " \n";
@@ -160,6 +160,125 @@ PPM copiaRegiao(PPM *ppm, int x1, int y1, int x2, int y2){
 	}
 	return retorno;
 }
+
+
+void inverteHorizontalmente(PPM  *ppm){
+	for(int i = 0; i < ppm->larg/2; i++){
+		for(int j  = 0; j < ppm->alt; j++){
+			RGB pixel = getPixel(ppm, i, j);
+			setPixel(ppm, i, j, getPixel(ppm, ppm->larg - i, j));
+			setPixel(ppm, ppm->larg - i , j, pixel);
+		}
+	}
+}
+void marcaAreaComLargura(PPM *ppm, int x1, int y1, int x2, int y2, int largura){
+	RGB vermelho(255,0,0);
+	for(int i = x1; i < x2; i++){
+		for(int j = y1; j < y2; j++){
+			for(int k = 0; k < largura; k++){
+				if(i == x1){
+					setPixel(ppm, i + k, j + k, vermelho);
+
+				}
+				if(j == y1){
+					setPixel(ppm, i + k, j + k, vermelho);
+				}
+				if(i == x2 -1 ){
+					setPixel(ppm, i + k, j + k, vermelho);
+				}
+				if(j == y2 - 1){
+					setPixel(ppm, i + k, j +  k, vermelho);
+				}
+			}
+
+		}
+	}
+}
+
+RGB quantizar(RGB rgb, int Q) {
+	RGB retorno;
+
+		int passo = 255 / (Q - 1);  // intervalo
+
+		int nivelR = (rgb.r + passo/2) / passo; // arredonda para o mais próximo
+		retorno.r = nivelR*passo;
+		int nivelG = (rgb.g + passo/2) / passo; // arredonda para o mais próximo
+		retorno.g = nivelG*passo;
+		int nivelB = (rgb.b + passo/2) / passo; // arredonda para o mais próximo
+		retorno.b = nivelB*passo;
+
+    return retorno;
+}
+void quantizaImagem(PPM *ppm, int q){
+	for(int i = 0 ; i < ppm->larg; i++){
+		for(int j = 0; j < ppm->alt; j++){
+			RGB pixel = getPixel(ppm, i, j);
+			setPixel(ppm, i, j, quantizar(pixel, q));
+		}
+	}
+}
+
+void exercicio(){
+	PPM img1;
+	cout << "Exercicio 14 #\n";
+	string entrada;
+	cout << "Informe o Q: ";
+	getline(cin, entrada);
+	int q = stoi(entrada);
+
+	ler(&img1, "numeros.ppm");
+	quantizaImagem(&img1, q);
+	imprimir(&img1);
+	gravar(&img1, "exercicio14.ppm");
+	destruir(&img1);
+
+}
+void exercicio12(){
+	
+}
+
+void inverteCores(PPM *ppm){
+	for(int i = 0; i < ppm->larg; i++){
+		for(int j  = 0 ; j < ppm->alt; j++){
+			RGB pixel = getPixel(ppm, i, j);
+			RGB newCor;
+			newCor.r = 255 - pixel.r;
+			newCor.g = 255 - pixel.g;
+			newCor.b = 255 - pixel.b;
+			setPixel(ppm, i, j, newCor);
+		}
+	}
+}
+void exercicio13(){
+	PPM img1;
+	cout << "Exercicio 13 #\n";
+	ler(&img1, "numeros.ppm");
+	inverteCores(&img1);
+	imprimir(&img1);
+	gravar(&img1, "exercicio13.ppm");
+	destruir(&img1);
+
+}
+void exercicio11(){
+	PPM img1;
+	cout << "Exercicio 11 #\n";
+	ler(&img1, "numeros.ppm");
+
+	marcaAreaComLargura(&img1, 391, 327, 574, 575, 10);
+	imprimir(&img1);
+	gravar(&img1, "exercicio11.ppm");
+	destruir(&img1);
+}
+void exercicio10(){
+	PPM img1;
+	cout << "Exercicio 10 #\n";
+	ler(&img1, "numeros.ppm");
+
+	inverteHorizontalmente(&img1);
+	imprimir(&img1);
+	gravar(&img1, "exercicio10.ppm");
+	destruir(&img1);
+}
 void exercicio9(){
 	PPM img1;
 	cout << "Exercicio 9 #\n";
@@ -168,7 +287,7 @@ void exercicio9(){
 	PGM copia = converteParaPGM(&img1);
 	imprimir(&copia);
 	cout << "imprimiu copia\n";
-	gravar(&copia, "exercicio9.pgm");.
+	gravar(&copia, "exercicio9.pgm");
 	destruir(&copia);
 }
 void exercicio8(){
@@ -284,7 +403,12 @@ int main(void)
 	// exercicio6();
 	// exercicio7();
 	// exercicio8();
-		exercicio9();
+		//exercicio9();
+		// exercicio10();
+		// exercicio11();
+
+		// exercicio13();
+		exercicio();
 	cout << "Pressione uma tecla para encerrar o programa.\n";
 	getchar();
 	return EXIT_SUCCESS; 
