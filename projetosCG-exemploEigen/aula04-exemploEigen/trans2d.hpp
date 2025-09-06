@@ -11,9 +11,16 @@ float graus2rad(float g)
     return ((g*__PI__)/180.0f);
 
 }
-Matrix3f getCisalhamento(float a){
+Matrix3f getCisalhamentoHorizontal(float a){
     Matrix3f M = Matrix3f::Identity();
     M(0,1) = a;
+   
+
+    return M;
+}
+Matrix3f getCisalhamentoVertical(float a){
+    Matrix3f M = Matrix3f::Identity();
+    M(1,0) = a;
    
 
     return M;
@@ -22,6 +29,15 @@ Matrix3f getReflexaoY() {
     Matrix3f M = Matrix3f::Identity();
     M(0,0) = -1;
     M(1,1) = 1;
+    M(2,2) = 1;
+   
+
+    return M;
+}
+Matrix3f getReflexaoH() {
+    Matrix3f M = Matrix3f::Identity();
+    M(0,0) = 1;
+    M(1,1) = -1;
     M(2,2) = 1;
    
 

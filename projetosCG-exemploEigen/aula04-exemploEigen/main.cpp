@@ -111,7 +111,7 @@ void exercicio1(){
 	criar(&saida, entrada.larg, entrada.alt);
 	Vector2f centro((entrada.larg-1)/2.0, (entrada.alt-1)/2.0);
 
-	Matrix3f m =   getTranslacao(centro.x(), centro.y()) *  getReflexaoY()  *  getCisalhamento(0.9) * getTranslacao(-centro.x(), -centro.y());
+	Matrix3f m =   getTranslacao(centro.x(), centro.y()) *  getReflexaoY()  *  getCisalhamentoHorizontal(0.9) * getTranslacao(-centro.x(), -centro.y());
 	transf2DInversa(&entrada, &saida, m.inverse());
 	gravar(&saida, "exercicio1.pgm");
 
@@ -123,7 +123,7 @@ void exercicio2(){
 	criar(&saida, entrada.larg, entrada.alt);
 	Vector2f centro((entrada.larg-1)/2.0, (entrada.alt-1)/2.0);
 
-	Matrix3f m =   getTranslacao(centro.x(), centro.y()) *   getCisalhamento(0.7f) * getRotacao(20.0f) * getEscala(0.5f, 0.5f) * getRotacao(15.0f) * getTranslacao(-centro.x(), -centro.y());
+	Matrix3f m =   getTranslacao(centro.x(), centro.y()) *   getCisalhamentoHorizontal(0.7f) * getRotacao(20.0f) * getEscala(0.5f, 0.5f) * getRotacao(15.0f) * getTranslacao(-centro.x(), -centro.y());
 	transf2DInversa(&entrada, &saida, m.inverse());
 	gravar(&saida, "exercicio2.pgm");
 }
@@ -143,22 +143,202 @@ void exercicio4(){
 	Matrix3f m;
 	m = m.Identity();
 	PGM entrada, saida;
-	string transformacao;
 	ler(&entrada, "numeros.pgm");
+	criar(&saida, entrada.larg, entrada.alt);
+	string transformacao;
 	int opt;
+	int count = 0;
 	do{
+		count++;
 		cout << "0. Sair.\n";
 		cout << "1. Aplicar transformacao\n";
 		cin >> opt;		
 		if(opt == 1){
-			cout << "Transformacao geometrica (R, T, S, RE ou CI): T \n";
+			transformacao = "";
+			cout << "Transformacao geometrica (R, T, E, C ou RE): T \n";
 			cin >> transformacao;
 			if(transformacao[0] == 'R'){
+				float angulo;
+				cout << "Informe o angulo da rotacado: \n";
+				cin>> angulo;
+				cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
+				m *= getRotacao(angulo);
+				string filename = "exercicio4-rotacao-"+to_string(count)+".pgm";
+				transf2DInversa(&entrada, &saida, m.inverse());
+				gravar(&saida, filename);
 
+			}
+			if(transformacao[0]=='T'){
+				float tx;
+				float ty;
+				cout << "Informe o tx da translacao: \n";
+				cin >> tx;
+				cout << "Informe o ty da translacao: \n";
+				cin >> ty;
+				cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
+
+				m *= getTranslacao(tx, ty);
+				string filename = "exercicio4-translacao-"+to_string(count)+".pgm";
+				transf2DInversa(&entrada, &saida, m.inverse());
+				gravar(&saida, filename);
+			}
+			if(transformacao[0]=='E'){
+				float sx, sy;
+				cout << "Informe o sx da escala: \n";
+				cin >> sx;
+				cout << "Informe o sy da escala: \n";
+				cin >> sy;
+				cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
+				m *= getEscala(sx, sy);
+				string filename = "exercicio4-escala-"+to_string(count)+".pgm";
+				transf2DInversa(&entrada, &saida, m.inverse());
+				gravar(&saida, filename);
+			}
+			if(transformacao[0]=='C'){
+				char h_or_v;
+				cout << "Cisalhamento horizonal digite h\nCisalhamento vertical digite v\n";
+				cin >> h_or_v;
+				
+				if(h_or_v == 'h'){
+					float a;
+					cout << "Informe o fator (a) do cisalhamento\n";
+					cin >> a;
+					cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
+
+					m*= getCisalhamentoHorizontal(a);
+					string filename = "exercicio4-cisalhamento-horicontal-"+to_string(count)+".pgm";
+					transf2DInversa(&entrada, &saida, m.inverse());
+					gravar(&saida, filename);
+				}else{
+					float b;
+					cout << "Informe o fator (b) do cisalhamento.\n";
+					cin >> b;
+					cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
+
+					m*= getCisalhamentoVertical(b);
+					string filename = "exercicio4-cisalhamento-vertical-"+to_string(count)+".pgm";
+					transf2DInversa(&entrada, &saida, m.inverse());
+					gravar(&saida, filename);
+				}
+			}
+			if(transformacao =="RE" ){
+				float h_or_v;
+				cout << "Reflexao horizonal digite h\nCisalhamento vertical digite v\n";
+				cin >> h_or_v;
+				if(h_or_v == 'h'){
+					m*= getReflexaoH();
+					string filename = "exercicio4-reflexao-horitonzal-"+to_string(count)+".pgm";
+					transf2DInversa(&entrada, &saida, m.inverse());
+					gravar(&saida, filename);
+				}else{
+					m*= getReflexaoY();
+					string filename = "exercicio4-reflexao-vertical-"+to_string(count)+".pgm";
+					transf2DInversa(&entrada, &saida, m.inverse());
+					gravar(&saida, filename);
+				}
 			}
 		}
 
 	}while(opt !=0);
+}
+void exercicio5() {
+    ifstream fin("entrada.txt");
+    if(!fin.is_open()){
+        cout << "Erro ao abrir arquivo entrada.txt\n";
+        return;
+    }
+
+    int nTrans;
+    string imgEntrada, imgSaida, mapTipo;
+
+    string token;
+    fin >> token >> nTrans;   // NTRANS
+    fin >> token >> imgEntrada; // IMGE
+    fin >> token >> imgSaida;   // IMGS
+    fin >> token >> mapTipo;    // MAP
+
+    PGM entrada, saida;
+    ler(&entrada, imgEntrada.c_str());
+
+    // largura = N * largura original
+    criar(&saida, entrada.larg * nTrans, entrada.alt);
+
+    Matrix3f m = Matrix3f::Identity();
+
+    for(int i=0; i<nTrans; i++){
+        string op;
+        fin >> op;
+Vector2f centro((entrada.larg-1)/2.0, (entrada.alt-1)/2.0);
+
+        if(op == "R"){ // Rotação
+            float angulo;
+            fin >> angulo;
+			cout << "entru aqui\n";
+    m *= getTranslacao(centro.x(), centro.y()) *
+         getRotacao(angulo) *
+         getTranslacao(-centro.x(), -centro.y());        }
+        else if(op == "T"){ // Translação
+            float tx, ty;
+            fin >> tx >> ty;
+            m *= getTranslacao(tx, ty);
+        }
+        else if(op == "E" || op == "S"){ // Escala
+            float sx, sy;
+            fin >> sx >> sy;
+    m *= getTranslacao(centro.x(), centro.y()) *
+         getEscala(sx, sy) *
+         getTranslacao(-centro.x(), -centro.y());
+			cout << "No S\n";
+        }
+        else if(op == "C" || op == "CI"){ // Cisalhamento
+            char hv;
+            float fator;
+            fin >> hv >> fator;
+            if(hv == 'H' || hv == 'h'){
+
+				cout << "CI H\n";
+        m *= getTranslacao(centro.x(), centro.y()) *
+             getCisalhamentoHorizontal(fator) *
+             getTranslacao(-centro.x(), -centro.y());
+			}
+            else
+        m *= getTranslacao(centro.x(), centro.y()) *
+             getCisalhamentoVertical(fator) *
+             getTranslacao(-centro.x(), -centro.y());
+			        }
+        else if(op == "RE"){ // Reflexão
+            char hv;
+            fin >> hv;
+            if(hv == 'H' || hv == 'h' || hv == 'X')
+                        m *= getTranslacao(centro.x(), centro.y()) *
+             getReflexaoH() *
+             getTranslacao(-centro.x(), -centro.y());
+            else
+                       m *= getTranslacao(centro.x(), centro.y()) *
+             getReflexaoY() *
+             getTranslacao(-centro.x(), -centro.y());
+				cout << "RE Y\n";
+        }
+
+        // cada segmento ocupa um "bloco" da imagem de saída
+        PGM segmento;
+        criar(&segmento, entrada.larg, entrada.alt);
+
+        if(mapTipo == "DIR")
+            transf2D(&entrada, &segmento, m);
+        else
+            transf2DInversa(&entrada, &segmento, m.inverse());
+
+        // copiar segmento para a saída na posição correta
+        for(int y=0; y<segmento.alt; y++){
+            for(int x=0; x<segmento.larg; x++){
+                setPixel(&saida, x + i*entrada.larg, y, getPixel(&segmento, x, y));
+            }
+        }
+    }
+
+    gravar(&saida, imgSaida.c_str());
+    cout << "Transformacoes aplicadas. Arquivo gerado: " << imgSaida << endl;
 }
 
 int main(void)
@@ -230,9 +410,11 @@ int main(void)
 
 	//  gravar(&saida, "rot45.pgm");
 
-	exercicio1();
-	exercicio2();
-	exercicio3();
+	// exercicio1();
+	// exercicio2();
+	// exercicio3();
+	// exercicio4();
+	exercicio5();
 	cout << "Pressione uma tecla para encerrar o programa.\n";
 	getchar();
 	return EXIT_SUCCESS; 
