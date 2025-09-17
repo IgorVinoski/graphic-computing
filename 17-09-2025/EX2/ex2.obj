@@ -1,0 +1,21 @@
+mtllib materialab.mtl
+v -1 0 -2
+v 1 0 -2
+v 1 2 -2
+v -1 2 -2
+v 1 0 -4
+v 1 2 -4
+
+
+vt 0 0
+vt 0.5 0
+vt 0.5 1
+vt 0 1
+vt 1 0
+vt 1 1
+usemtl matAB
+
+
+
+f 1/1 2/2 3/3 4/4
+f 2/2 5/5 6/6 3/3
