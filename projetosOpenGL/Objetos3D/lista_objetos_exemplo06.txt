@@ -1,0 +1,14 @@
+solM.obj
+dragao.obj
+bunny-normF.obj
+bunny-normV.obj
+chaleira.obj
+cubo.obj
+torusknot.obj
+gear.obj
+worm-gear.obj
+torus.obj
+cilindro.obj
+barril_kd_ks.obj
+barril_kd.obj
+poste.obj

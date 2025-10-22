@@ -1,0 +1,322 @@
+# Materiais do OpenGL, converti para .MTL
+# ===================== PARÂMETROS DO ARQUIVO .MTL =====================
+# Ns  - Brilho (shininess)
+#       0   = reflexão espalhada e fosca
+#       1000 = reflexão muito concentrada e brilhante
+#
+# Ka  - Cor ambiente (ambient reflectivity)
+# Kd  - Cor difusa (diffuse reflectivity)
+# Ks  - Cor especular (specular reflectivity)
+#
+# Ke  - Emissão (emissive color)
+#       Faz o objeto parecer autoiluminado.
+#       Valor padrão: Ke 0.000 0.000 0.000
+#       No fragment shader: vec3 cor = ambient + diffuse + specular + material.emissive;
+#
+# Ni  - Índice de refração (optical density)
+#       Exemplos:
+#         Ar:    1.0
+#         Água:  1.33
+#         Vidro: ~1.5
+#
+# d   - Transparência (dissolve)
+#       1.0 = totalmente opaco
+#       0.0 = totalmente transparente
+#
+# illum - Modelo de iluminação:
+#       0 = Só cor difusa, sem luz ambiente
+#       1 = Difusa + ambiente
+#       2 = Difusa + ambiente + especular
+#       3 = Com reflexão (ray tracing)
+#       7 = Transparência + reflexão
+# ======================================================================
+
+newmtl matCorLatao
+Ka 0.329412 0.223529 0.027451
+Kd 0.780392 0.568627 0.113725
+Ks 0.992157 0.941176 0.807843
+Ns 27.897400
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorBronze
+Ka 0.212500 0.127500 0.054000
+Kd 0.714000 0.428400 0.181440
+Ks 0.393548 0.271906 0.166721
+Ns 25.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorBronzePolido
+Ka 0.250000 0.148000 0.064750
+Kd 0.400000 0.236800 0.103600
+Ks 0.774597 0.458561 0.200621
+Ns 76.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorCromado
+Ka 0.250000 0.250000 0.250000
+Kd 0.400000 0.400000 0.400000
+Ks 0.774597 0.774597 0.774597
+Ns 76.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorCobre
+Ka 0.191250 0.073500 0.022500
+Kd 0.703800 0.270480 0.082800
+Ks 0.256777 0.137622 0.086014
+Ns 12.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorCobrePolido
+Ka 0.229500 0.088250 0.027500
+Kd 0.550800 0.211800 0.066000
+Ks 0.580594 0.223257 0.069570
+Ns 51.200000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorOuro
+Ka 0.247250 0.199500 0.074500
+Kd 0.751640 0.606480 0.226480
+Ks 0.628281 0.555802 0.366065
+Ns 51.200000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorOuroPolido
+Ka 0.247250 0.224500 0.064500
+Kd 0.346150 0.314300 0.090300
+Ks 0.797357 0.723991 0.208006
+Ns 83.200000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorEstanho
+Ka 0.105882 0.058824 0.113725
+Kd 0.427451 0.470588 0.541176
+Ks 0.333333 0.333333 0.521569
+Ns 9.846150
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorPrata
+Ka 0.192250 0.192250 0.192250
+Kd 0.507540 0.507540 0.507540
+Ks 0.508273 0.508273 0.508273
+Ns 51.200000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorPrataPolida
+Ka 0.231250 0.231250 0.231250
+Kd 0.277500 0.277500 0.277500
+Ks 0.773911 0.773911 0.773911
+Ns 89.600000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorEsmeralda
+Ka 0.021500 0.174500 0.021500
+Kd 0.075680 0.614240 0.075680
+Ks 0.633000 0.727811 0.633000
+Ns 76.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorJade
+Ka 0.135000 0.222500 0.157500
+Kd 0.540000 0.890000 0.630000
+Ks 0.316228 0.316228 0.316228
+Ns 12.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorObsidiana
+Ka 0.053750 0.050000 0.066250
+Kd 0.182750 0.170000 0.225250
+Ks 0.332741 0.328634 0.346435
+Ns 38.400000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorPerola
+Ka 0.250000 0.207250 0.207250
+Kd 1.000000 0.829000 0.829000
+Ks 0.296648 0.296648 0.296648
+Ns 11.264000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorRubi
+Ka 0.174500 0.011750 0.011750
+Kd 0.614240 0.041360 0.041360
+Ks 0.727811 0.626959 0.626959
+Ns 76.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorTurquesa
+Ka 0.100000 0.187250 0.174500
+Kd 0.396000 0.741510 0.691020
+Ks 0.297254 0.308290 0.306678
+Ns 12.800000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorPlasticoPreto
+Ka 0.000000 0.000000 0.000000
+Kd 0.010000 0.010000 0.010000
+Ks 0.500000 0.500000 0.500000
+Ns 32.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorPlasticoCiano
+Ka 0.000000 0.100000 0.060000
+Kd 0.000000 0.509804 0.509804
+Ks 0.501961 0.501961 0.501961
+Ns 32.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorPlasticoVerde
+Ka 0.000000 0.000000 0.000000
+Kd 0.100000 0.350000 0.100000
+Ks 0.450000 0.550000 0.450000
+Ns 32.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorPlasticoVermelho
+Ka 0.000000 0.000000 0.000000
+Kd 0.500000 0.000000 0.000000
+Ks 0.700000 0.600000 0.600000
+Ns 32.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorPlasticoBranco
+Ka 0.000000 0.000000 0.000000
+Kd 0.550000 0.550000 0.550000
+Ks 0.700000 0.700000 0.700000
+Ns 32.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorPlasticoAmarelo
+Ka 0.000000 0.000000 0.000000
+Kd 0.500000 0.500000 0.000000
+Ks 0.600000 0.600000 0.500000
+Ns 32.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorBorrachaPreta
+Ka 0.020000 0.020000 0.020000
+Kd 0.010000 0.010000 0.010000
+Ks 0.400000 0.400000 0.400000
+Ns 10.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorBorrachaCiano
+Ka 0.000000 0.050000 0.050000
+Kd 0.400000 0.500000 0.500000
+Ks 0.040000 0.700000 0.700000
+Ns 10.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorBorrachaVerde
+Ka 0.000000 0.050000 0.000000
+Kd 0.400000 0.500000 0.400000
+Ks 0.040000 0.700000 0.040000
+Ns 10.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorBorrachaVermelha
+Ka 0.050000 0.000000 0.000000
+Kd 0.500000 0.400000 0.400000
+Ks 0.700000 0.040000 0.040000
+Ns 10.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorBorrachaBranca
+Ka 0.050000 0.050000 0.050000
+Kd 0.500000 0.500000 0.500000
+Ks 0.700000 0.700000 0.700000
+Ns 10.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2
+
+newmtl matCorBorrachaAmarela
+Ka 0.050000 0.050000 0.000000
+Kd 0.500000 0.500000 0.400000
+Ks 0.700000 0.700000 0.040000
+Ns 10.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.5
+d 1.0
+illum 2

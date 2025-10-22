@@ -1,0 +1,7 @@
+solM.obj
+torusknot.obj
+torus.obj
+gear.obj
+chaleira.obj
+cilindro.obj
+cubo.obj

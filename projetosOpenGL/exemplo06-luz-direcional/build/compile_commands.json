@@ -1,0 +1,92 @@
+[
+{
+  "directory": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DSTB_IMAGE_IMPLEMENTATION -DSTB_IMAGE_WRITE_IMPLEMENTATION -DTINYOBJLOADER_IMPLEMENTATION -DTINYPLY_IMPLEMENTATION @CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Proj_OpenGL_Luz_Direcional.dir\\main.cpp.obj -c C:\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\exemplo06-luz-direcional\\main.cpp",
+  "file": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/main.cpp",
+  "output": "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DSTB_IMAGE_IMPLEMENTATION -DSTB_IMAGE_WRITE_IMPLEMENTATION -DTINYOBJLOADER_IMPLEMENTATION -DTINYPLY_IMPLEMENTATION @CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Proj_OpenGL_Luz_Direcional.dir\\CGMath.cpp.obj -c C:\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\exemplo06-luz-direcional\\CGMath.cpp",
+  "file": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/CGMath.cpp",
+  "output": "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/CGMath.cpp.obj"
+},
+{
+  "directory": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DSTB_IMAGE_IMPLEMENTATION -DSTB_IMAGE_WRITE_IMPLEMENTATION -DTINYOBJLOADER_IMPLEMENTATION -DTINYPLY_IMPLEMENTATION @CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Proj_OpenGL_Luz_Direcional.dir\\objeto3d.cpp.obj -c C:\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\exemplo06-luz-direcional\\objeto3d.cpp",
+  "file": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/objeto3d.cpp",
+  "output": "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/objeto3d.cpp.obj"
+},
+{
+  "directory": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DSTB_IMAGE_IMPLEMENTATION -DSTB_IMAGE_WRITE_IMPLEMENTATION -DTINYOBJLOADER_IMPLEMENTATION -DTINYPLY_IMPLEMENTATION @CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Proj_OpenGL_Luz_Direcional.dir\\opengl_func.cpp.obj -c C:\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\exemplo06-luz-direcional\\opengl_func.cpp",
+  "file": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/opengl_func.cpp",
+  "output": "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/opengl_func.cpp.obj"
+},
+{
+  "directory": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DSTB_IMAGE_IMPLEMENTATION -DSTB_IMAGE_WRITE_IMPLEMENTATION -DTINYOBJLOADER_IMPLEMENTATION -DTINYPLY_IMPLEMENTATION @CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Proj_OpenGL_Luz_Direcional.dir\\shader.cpp.obj -c C:\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\exemplo06-luz-direcional\\shader.cpp",
+  "file": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/shader.cpp",
+  "output": "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/shader.cpp.obj"
+},
+{
+  "directory": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DSTB_IMAGE_IMPLEMENTATION -DSTB_IMAGE_WRITE_IMPLEMENTATION -DTINYOBJLOADER_IMPLEMENTATION -DTINYPLY_IMPLEMENTATION @CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Proj_OpenGL_Luz_Direcional.dir\\textura.cpp.obj -c C:\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\exemplo06-luz-direcional\\textura.cpp",
+  "file": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/textura.cpp",
+  "output": "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/textura.cpp.obj"
+},
+{
+  "directory": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DSTB_IMAGE_IMPLEMENTATION -DSTB_IMAGE_WRITE_IMPLEMENTATION -DTINYOBJLOADER_IMPLEMENTATION -DTINYPLY_IMPLEMENTATION @CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Proj_OpenGL_Luz_Direcional.dir\\camera.cpp.obj -c C:\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\exemplo06-luz-direcional\\camera.cpp",
+  "file": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/camera.cpp",
+  "output": "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/camera.cpp.obj"
+},
+{
+  "directory": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DSTB_IMAGE_IMPLEMENTATION -DSTB_IMAGE_WRITE_IMPLEMENTATION -DTINYOBJLOADER_IMPLEMENTATION -DTINYPLY_IMPLEMENTATION @CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Proj_OpenGL_Luz_Direcional.dir\\iluminacao.cpp.obj -c C:\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\exemplo06-luz-direcional\\iluminacao.cpp",
+  "file": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/iluminacao.cpp",
+  "output": "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/iluminacao.cpp.obj"
+},
+{
+  "directory": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe -DSTB_IMAGE_IMPLEMENTATION -DSTB_IMAGE_WRITE_IMPLEMENTATION -DTINYOBJLOADER_IMPLEMENTATION -DTINYPLY_IMPLEMENTATION @CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/includes_C.rsp -g -o CMakeFiles\\Proj_OpenGL_Luz_Direcional.dir\\C_\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\src\\glad.c.obj -c C:\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\src\\glad.c",
+  "file": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/glad.c",
+  "output": "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/glad.c.obj"
+},
+{
+  "directory": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DSTB_IMAGE_IMPLEMENTATION -DSTB_IMAGE_WRITE_IMPLEMENTATION -DTINYOBJLOADER_IMPLEMENTATION -DTINYPLY_IMPLEMENTATION @CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Proj_OpenGL_Luz_Direcional.dir\\C_\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\src\\imgui.cpp.obj -c C:\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\src\\imgui.cpp",
+  "file": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui.cpp",
+  "output": "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui.cpp.obj"
+},
+{
+  "directory": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DSTB_IMAGE_IMPLEMENTATION -DSTB_IMAGE_WRITE_IMPLEMENTATION -DTINYOBJLOADER_IMPLEMENTATION -DTINYPLY_IMPLEMENTATION @CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Proj_OpenGL_Luz_Direcional.dir\\C_\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\src\\imgui_draw.cpp.obj -c C:\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\src\\imgui_draw.cpp",
+  "file": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui_draw.cpp",
+  "output": "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui_draw.cpp.obj"
+},
+{
+  "directory": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DSTB_IMAGE_IMPLEMENTATION -DSTB_IMAGE_WRITE_IMPLEMENTATION -DTINYOBJLOADER_IMPLEMENTATION -DTINYPLY_IMPLEMENTATION @CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Proj_OpenGL_Luz_Direcional.dir\\C_\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\src\\imgui_impl_glfw.cpp.obj -c C:\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\src\\imgui_impl_glfw.cpp",
+  "file": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui_impl_glfw.cpp",
+  "output": "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui_impl_glfw.cpp.obj"
+},
+{
+  "directory": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DSTB_IMAGE_IMPLEMENTATION -DSTB_IMAGE_WRITE_IMPLEMENTATION -DTINYOBJLOADER_IMPLEMENTATION -DTINYPLY_IMPLEMENTATION @CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Proj_OpenGL_Luz_Direcional.dir\\C_\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\src\\imgui_impl_opengl3.cpp.obj -c C:\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\src\\imgui_impl_opengl3.cpp",
+  "file": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui_impl_opengl3.cpp",
+  "output": "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui_impl_opengl3.cpp.obj"
+},
+{
+  "directory": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DSTB_IMAGE_IMPLEMENTATION -DSTB_IMAGE_WRITE_IMPLEMENTATION -DTINYOBJLOADER_IMPLEMENTATION -DTINYPLY_IMPLEMENTATION @CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Proj_OpenGL_Luz_Direcional.dir\\C_\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\src\\imgui_tables.cpp.obj -c C:\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\src\\imgui_tables.cpp",
+  "file": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui_tables.cpp",
+  "output": "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui_tables.cpp.obj"
+},
+{
+  "directory": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo06-luz-direcional/build",
+  "command": "C:\\mingw64\\bin\\g++.exe -DSTB_IMAGE_IMPLEMENTATION -DSTB_IMAGE_WRITE_IMPLEMENTATION -DTINYOBJLOADER_IMPLEMENTATION -DTINYPLY_IMPLEMENTATION @CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Proj_OpenGL_Luz_Direcional.dir\\C_\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\src\\imgui_widgets.cpp.obj -c C:\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\src\\imgui_widgets.cpp",
+  "file": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui_widgets.cpp",
+  "output": "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui_widgets.cpp.obj"
+}
+]

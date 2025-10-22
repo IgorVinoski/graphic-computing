@@ -1,0 +1,38 @@
+[
+{
+  "directory": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo01-triangulo/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/Proj_OpenGL_Exemplo01_Triangulo.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Proj_OpenGL_Exemplo01_Triangulo.dir\\main.cpp.obj -c C:\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\exemplo01-triangulo\\main.cpp",
+  "file": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo01-triangulo/main.cpp",
+  "output": "CMakeFiles/Proj_OpenGL_Exemplo01_Triangulo.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo01-triangulo/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/Proj_OpenGL_Exemplo01_Triangulo.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Proj_OpenGL_Exemplo01_Triangulo.dir\\CGMath.cpp.obj -c C:\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\exemplo01-triangulo\\CGMath.cpp",
+  "file": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo01-triangulo/CGMath.cpp",
+  "output": "CMakeFiles/Proj_OpenGL_Exemplo01_Triangulo.dir/CGMath.cpp.obj"
+},
+{
+  "directory": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo01-triangulo/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/Proj_OpenGL_Exemplo01_Triangulo.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Proj_OpenGL_Exemplo01_Triangulo.dir\\objeto3d.cpp.obj -c C:\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\exemplo01-triangulo\\objeto3d.cpp",
+  "file": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo01-triangulo/objeto3d.cpp",
+  "output": "CMakeFiles/Proj_OpenGL_Exemplo01_Triangulo.dir/objeto3d.cpp.obj"
+},
+{
+  "directory": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo01-triangulo/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/Proj_OpenGL_Exemplo01_Triangulo.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Proj_OpenGL_Exemplo01_Triangulo.dir\\opengl_func.cpp.obj -c C:\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\exemplo01-triangulo\\opengl_func.cpp",
+  "file": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo01-triangulo/opengl_func.cpp",
+  "output": "CMakeFiles/Proj_OpenGL_Exemplo01_Triangulo.dir/opengl_func.cpp.obj"
+},
+{
+  "directory": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo01-triangulo/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/Proj_OpenGL_Exemplo01_Triangulo.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Proj_OpenGL_Exemplo01_Triangulo.dir\\shader.cpp.obj -c C:\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\exemplo01-triangulo\\shader.cpp",
+  "file": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo01-triangulo/shader.cpp",
+  "output": "CMakeFiles/Proj_OpenGL_Exemplo01_Triangulo.dir/shader.cpp.obj"
+},
+{
+  "directory": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo01-triangulo/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/Proj_OpenGL_Exemplo01_Triangulo.dir/includes_C.rsp -g -o CMakeFiles\\Proj_OpenGL_Exemplo01_Triangulo.dir\\C_\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\src\\glad.c.obj -c C:\\Users\\20231PF.CC0004\\Documents\\computacao-grafica\\projetosOpenGL\\src\\glad.c",
+  "file": "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/glad.c",
+  "output": "CMakeFiles/Proj_OpenGL_Exemplo01_Triangulo.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/glad.c.obj"
+}
+]

@@ -1,0 +1,22 @@
+#dir /b *.obj > lista_obj.txt
+cubo-corvert.ply
+barril.obj
+caixa.obj
+chaleira.obj
+chao.obj
+cilindro.obj
+cone.obj
+cubo.obj
+diamante.obj
+gear.obj
+parede1.obj
+parede2.obj
+planta.obj
+poste.obj
+tambor-amarelo.obj
+tambor-azul.obj
+tambor-vermelho.obj
+torus.obj
+torusknot.obj
+worm-gear.obj
+

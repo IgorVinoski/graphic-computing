@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Proj_OpenGL_Exemplo01_Triangulo",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Proj_OpenGL_Exemplo01_Triangulo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Proj_OpenGL_Exemplo01_Triangulo-Debug-40ac25c03cc47fe0b970.json",
+					"name" : "Proj_OpenGL_Exemplo01_Triangulo",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo01-triangulo/build",
+		"source" : "C:/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/exemplo01-triangulo"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

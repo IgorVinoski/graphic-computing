@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/CGMath.cpp.obj"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/CGMath.cpp.obj.d"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/glad.c.obj"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/glad.c.obj.d"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui.cpp.obj"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui.cpp.obj.d"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui_draw.cpp.obj"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui_draw.cpp.obj.d"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui_impl_glfw.cpp.obj"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui_impl_glfw.cpp.obj.d"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui_impl_opengl3.cpp.obj"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui_impl_opengl3.cpp.obj.d"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui_tables.cpp.obj"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui_tables.cpp.obj.d"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui_widgets.cpp.obj"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/C_/Users/20231PF.CC0004/Documents/computacao-grafica/projetosOpenGL/src/imgui_widgets.cpp.obj.d"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/camera.cpp.obj"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/camera.cpp.obj.d"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/iluminacao.cpp.obj"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/iluminacao.cpp.obj.d"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/main.cpp.obj"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/main.cpp.obj.d"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/objeto3d.cpp.obj"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/objeto3d.cpp.obj.d"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/opengl_func.cpp.obj"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/opengl_func.cpp.obj.d"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/shader.cpp.obj"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/shader.cpp.obj.d"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/textura.cpp.obj"
+  "CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/textura.cpp.obj.d"
+  "Proj_OpenGL_Luz_Direcional.exe"
+  "Proj_OpenGL_Luz_Direcional.exe.manifest"
+  "Proj_OpenGL_Luz_Direcional.pdb"
+  "libProj_OpenGL_Luz_Direcional.dll.a"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C CXX)
+  include(CMakeFiles/Proj_OpenGL_Luz_Direcional.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

@@ -1,0 +1,9 @@
+newmtl matCorSol
+Ns 100.0
+Ka 1.0 1.0 0.8
+Kd 1.0 1.0 0.0
+Ks 1.0 1.0 0.5
+Ke 1.0 1.0 0.0
+Ni 1.500000
+d 1.0
+illum 2

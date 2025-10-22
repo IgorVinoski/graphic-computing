@@ -1,0 +1,8 @@
+cena-luz-lampada.obj
+cena-luz-plano_tex.obj
+cena-luz-chaleira.obj
+cena-luz-cubo.obj
+cena-luz-gear.obj
+cena-luz-torus.obj
+cena-luz-torusknot.obj
+cena-luz-worm_gear.obj

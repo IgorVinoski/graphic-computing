@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "Win64",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/../include",
+                 "${workspaceFolder}/../include/imgui"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "STB_IMAGE_IMPLEMENTATION",
+                "STB_IMAGE_WRITE_IMPLEMENTATION",
+                "TINYOBJLOADER_IMPLEMENTATION",
+                "TINYPLY_IMPLEMENTATION"
+            ],
+            // "compilerPath": "C:/mingw64/bin/g++.exe",
+            "compilerPath": "C:/msys64/mingw64/bin/g++.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}
